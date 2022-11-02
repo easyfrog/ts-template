@@ -1,4 +1,5 @@
-import { add } from "./mod";
+import { add, kao } from "./mod";
+console.log(kao());
 //
 // hello~
 //

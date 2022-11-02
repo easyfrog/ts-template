@@ -1,7 +1,14 @@
 function add(x, y) {
     return x + y;
 }
+function kao() {
+    return {
+        name: 'ztc',
+        age: 123
+    };
+}
 
+console.log(kao());
 //
 // hello~
 //
