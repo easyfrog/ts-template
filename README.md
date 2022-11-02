@@ -4,7 +4,7 @@ use rollup and terser to bundle in a single umd file
 
 ```bash
 # start to watch ts files's change
-tsc -w
+npm start
 ```
 
 # src
