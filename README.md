@@ -9,11 +9,11 @@ git clone git@github.com:easyfrog/ts-template.git PROJECT-NAME
 npm start
 ```
 
-# src
+# src folder
 
 place ts files in src folder
 
-# dis
+# dist folder
 
 * `js`: js folder to hold all js files generate by typescript
 * `bound.esm.js`: auto generate when ts file changed, and load by `index.html`
