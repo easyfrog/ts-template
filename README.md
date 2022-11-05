@@ -3,9 +3,13 @@
 use rollup and terser to bundle in a single umd file
 
 ```bash
-# clone to local 
+# 1. clone to local 
 git clone git@github.com:easyfrog/ts-template.git PROJECT-NAME
-# start to watch ts files's change
+
+# 2. install dependents
+cd PROJECT-NAME && npm i
+
+# 3. start to watch ts files's change
 npm start
 ```
 
