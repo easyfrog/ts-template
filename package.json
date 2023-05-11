@@ -6,17 +6,20 @@
   "main": "index.js",
   "scripts": {
     "build": "rollup -c",
-    "start": "tsc-watch --onSuccess \"npm run build\"",
-    "build:rel": "rollup -c --environment release"
+    "watch": "tsc-watch",
+    "watch-build": "tsc-watch --onSuccess \"npm run build\"",
+    "build:rel": "rollup -c --environment release && npm run types",
+    "types": "dts-bundle-generator --no-check --umd-module-name -o dist/bundle/index.d.ts src/index.ts"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "rollup": "^3.2.5"
+    "rollup": "^3.21.6"
   },
   "devDependencies": {
-    "@rollup/plugin-terser": "^0.1.0",
-    "tsc-watch": "^5.0.3"
+    "@rollup/plugin-terser": "^0.4.1",
+    "dts-bundle-generator": "^8.0.1",
+    "tsc-watch": "^6.0.4"
   }
 }

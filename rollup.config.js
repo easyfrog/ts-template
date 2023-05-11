@@ -16,6 +16,7 @@ if (isRelease) {
 	outputs.push({
 		file: './dist/bundle/bundle.umd.js',
 		format: 'umd',
+        name: 'om',
 		plugins: [terser()]
 	})
 }
